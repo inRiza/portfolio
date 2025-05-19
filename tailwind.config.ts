@@ -36,6 +36,33 @@ export default {
           gray: "#181818",
         },
       },
+      keyframes: {
+        'post-click': {
+          '0%': { 
+            transform: 'scale(1) rotate(0deg)',
+            boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.4)'
+          },
+          '25%': { 
+            transform: 'scale(0.95) rotate(-5deg)',
+            boxShadow: '0 0 0 10px rgba(255, 255, 255, 0)'
+          },
+          '50%': { 
+            transform: 'scale(1.05) rotate(5deg)',
+            boxShadow: '0 0 0 0 rgba(255, 255, 255, 0)'
+          },
+          '75%': { 
+            transform: 'scale(0.98) rotate(-2deg)',
+            boxShadow: '0 0 0 5px rgba(255, 255, 255, 0)'
+          },
+          '100%': { 
+            transform: 'scale(1) rotate(0deg)',
+            boxShadow: '0 0 0 0 rgba(255, 255, 255, 0)'
+          }
+        }
+      },
+      animation: {
+        'post-click': 'post-click 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+      }
     },
   },
   plugins: [],

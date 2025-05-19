@@ -98,13 +98,14 @@ function TechStacksScene() {
         {name: "C", textures: "/textures/c.svg"},
         {name: "C#", textures: "/textures/csharp.svg"},
         {name: "Typescript", textures: "/textures/ts.svg"},
-        {name: "git", textures: "/textures/git.svg"},
-        {name: "github", textures: "/textures/github.svg"},
-        {name: "go", textures: "/textures/go.svg"},
-        {name: "nextjs", textures: "/textures/nextjs.svg"},
-        {name: "nodejs", textures: "/textures/nodejs.svg"},
-        {name: "mysql", textures: "/textures/mysql.svg"},
-        {name: "postgresql", textures: "/textures/postgresql.svg"},
+        {name: "Git", textures: "/textures/git.svg"},
+        {name: "Github", textures: "/textures/github.svg"},
+        {name: "Golang", textures: "/textures/go.svg"},
+        {name: "NextJS", textures: "/textures/nextjs.svg"},
+        {name: "NodeJS", textures: "/textures/nodejs.svg"},
+        {name: "MySQL", textures: "/textures/mysql.svg"},
+        {name: "PostgreSQL", textures: "/textures/postgresql.svg"},
+        {name: "Figma", textures: "/textures/figma.svg"},
     ]
 
     const iconsPerRow = 6;

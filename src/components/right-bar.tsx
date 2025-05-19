@@ -1,9 +1,11 @@
 import Search from './search'
+import InfoRight from './info-right'
 
-function RightBar() {
+const RightBar = () => {
   return (
-    <div className=''>
-      <Search></Search>
+    <div className='pt-4 flex flex-col gap-4'>
+      <Search/>
+      <InfoRight/>
     </div>
   )
 }

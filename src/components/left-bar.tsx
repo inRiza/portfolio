@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
 
@@ -36,6 +38,14 @@ const menuList = [
 ];
 
 const LeftBar = () => {
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handlePostClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 1000);
+  };
+
   return (
     <div className='h-screen sticky top-0 flex flex-col justify-between pt-2 pb-8'>
       <div className='flex flex-col gap-4 text-lg'>
@@ -55,11 +65,19 @@ const LeftBar = () => {
             </Link>
           ))}
         </div>
-        <Link href="/" className='xxl:hidden bg-white text-black rounded-full w-12 h-12 flex items-center justify-center'>
+        <Link 
+          href="/" 
+          onClick={handlePostClick}
+          className={`xxl:hidden bg-white text-black rounded-full w-12 h-12 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-lg ${isAnimating ? 'animate-post-click' : ''}`}
+        >
           <Image src="icons/post.svg" alt="post" width={24} height={24}/>
         </Link>
-        <Link href="/" className='hidden xxl:block bg-white text-black rounded-full font-bold py-2 px-20'>
-          Post
+        <Link 
+          href="/" 
+          onClick={handlePostClick}
+          className={`hidden xxl:block bg-white text-sm text-black rounded-full font-bold text-based py-2 px-6 text-center transition-all duration-300 hover:scale-105 hover:shadow-lg ${isAnimating ? 'animate-post-click' : ''}`}
+        >
+          Hello!
         </Link>
       </div>
       <div className='flex items-center justify-between'>
