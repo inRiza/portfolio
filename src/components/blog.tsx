@@ -1,7 +1,7 @@
 import Post from "./post"
 
-const Projects = () => {
-  const projects1 = {
+const Blog = () => {
+  const blog1 = {
     username: "RizainF",
     handle: "rizainfird",
     content: "Cooming Soon!",
@@ -15,8 +15,8 @@ const Projects = () => {
   }
   
   return (
-    <Post {...projects1} />
+    <Post {...blog1} />
   )
 }
 
-export default Projects
+export default Blog

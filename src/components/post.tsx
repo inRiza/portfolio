@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,6 +14,7 @@ interface PostProps {
   comments: number
   reposts: number
   views: number
+  customContent?: React.ReactNode
 }
 
 const Post = ({
@@ -25,9 +28,10 @@ const Post = ({
   comments,
   reposts,
   views,
+  customContent
 }: PostProps) => {
   return (
-    <div className="p-4 border-border-gray hover:bg-hover-gray transition">
+    <div className="p-4 border-b-[1px] border-border-gray hover:bg-hover-gray transition">
       <div className="flex items-start space-x-3">
         <div className='w-10 h-10 rounded-full'>
           <Image
@@ -44,7 +48,7 @@ const Post = ({
               <span className='font-bold'>{username}</span>
               <span className='text-text-gray'>@{handle}</span>
               <span className='font-bold text-text-gray'>∙</span>
-              <span className='text-text-gray'>{timestamp}</span>
+              <span className='text-text-gray text-sm'>{timestamp}</span>
             </div>
             <Image
               src="/icons/infoMore.svg"
@@ -64,6 +68,11 @@ const Post = ({
                 height={300}
                 className='w-full object-cover'
               />
+            </div>
+          )}
+          {customContent && (
+            <div className='mt-3'>
+              {customContent}
             </div>
           )}
           <div className='flex items-center justify-between mt-3 text-text-gray'>

@@ -84,7 +84,7 @@ const LeftBar = () => {
         <div className='flex items-center gap-2'>
           <div className='w-10 h-10 rounded-full relative overflow-hidden'>
             <Link href="/" className=''>
-              <Image src="" alt="profile" fill/>
+              <Image src="/general/avatar.png" alt="profile" fill/>
             </Link>
           </div>
           <div className='hidden xxl:flex flex-col'>

@@ -1,7 +1,7 @@
 import Post from "./post"
 
-const Projects = () => {
-  const projects1 = {
+const Achievements = () => {
+  const achievement1 = {
     username: "RizainF",
     handle: "rizainfird",
     content: "Cooming Soon!",
@@ -15,8 +15,8 @@ const Projects = () => {
   }
   
   return (
-    <Post {...projects1} />
+    <Post {...achievement1} />
   )
 }
 
-export default Projects
+export default Achievements
