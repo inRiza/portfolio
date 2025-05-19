@@ -11,46 +11,28 @@ const menuList = [
   },
   {
     id: 2,
-    name: 'Explore',
-    link: '/explore',
-    icon: 'icons/explore.svg',  
+    name: 'LinkedIn',
+    link: '/',
+    icon: '/textures/linkedin.svg',  
   },
   {
     id: 3,
-    name: 'Notifications',
-    link: '/notifications',
-    icon: 'icons/notification.svg',
+    name: 'GitHub',
+    link: 'https://github.com/inRiza',
+    icon: '/textures/github-.svg',
   },
   {
     id: 4,
-    name: 'Messages',
-    link: '/messages',
-    icon: 'icons/message.svg',
+    name: 'Gmail',
+    link: '/',
+    icon: '/textures/gmail.svg',
   },
   {
     id: 5,
-    name: 'Bookmarks',
-    link: '/bookmarks',
-    icon: 'icons/bookmark.svg',
-  },
-  {
-    id: 6,
-    name: 'Jobs',
-    link: '/jobs',
-    icon: 'icons/job.svg',
-  },
-  {
-    id: 7,
-    name: 'Profile',
-    link: '/profile',
-    icon: 'icons/profile.svg',
-  },
-  {
-    id: 8,
-    name: 'More',
-    link: '/more',
-    icon: 'icons/more.svg',
-  },
+    name: 'Instagram',
+    link: '/',
+    icon: '/textures/instagram.svg',
+  }
 ];
 
 const LeftBar = () => {
@@ -69,7 +51,7 @@ const LeftBar = () => {
                 width={24} 
                 height={24} 
               />
-              <span className='hidden xxl:inline'>{item.name}</span>
+              <span className={`hidden xxl:inline ${item.id === 1 ? 'font-bold' : ''}`}>{item.name}</span>
             </Link>
           ))}
         </div>

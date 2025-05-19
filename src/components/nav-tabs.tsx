@@ -1,11 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-
 const Tabs = [
     {
         key: "for-you",
-        label: "For You",
+        label: "Me",
     },
     {
         key: "projects",
@@ -17,7 +15,11 @@ const Tabs = [
     },
     {
         key: "blog",
-        label: "My Blog",
+        label: "Blog",
+    },
+    {
+        key: "contact",
+        label: "Contact",
     },
 ]
 

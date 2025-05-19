@@ -5,6 +5,7 @@ import ForYou from "../components/for-you"
 import Projects from "../components/projects"
 import Achievements from "../components/achievements"
 import Blog from "../components/blog"
+import Contact from "../components/contact"
 import { useState } from "react"
 
 const Homepage = () => {
@@ -19,6 +20,9 @@ const Homepage = () => {
   }
   else if (activeTab === "blog") {
     Content = <Blog/>;
+  }
+  else if (activeTab === "contact") {
+    Content = <Contact/>;
   }
   else {
     Content = <ForYou/>;
