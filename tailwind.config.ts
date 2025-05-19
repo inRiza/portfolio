@@ -22,16 +22,19 @@ export default {
           graylight: "e7e9ea",
         },
         border: {
-          gray: "#2f336",
+          gray: "#2f3336cc",
         },
         input: {
           gray: "#202327",
         },
         icon: {
-          blue: "#1dbf90",
+          blue: "#1da1f2",
           green: "#00ba7c",
           pink: "#f91880",
-        }
+        },
+        hover: {
+          gray: "#181818",
+        },
       },
     },
   },
