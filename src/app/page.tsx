@@ -1,9 +1,13 @@
 import NavTabs from "../components/nav-tabs"
-
+import ForYou from "../components/for-you"
 
 const Homepage = () => {
   return (
-    <NavTabs/>
+    <div>
+      <NavTabs/>
+      <ForYou/>
+    </div>
+    
   )
 }
 

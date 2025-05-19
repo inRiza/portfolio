@@ -1,6 +1,6 @@
 import "./globals.css";
 import LeftBar from "@/components/left-bar";
-import RigthBar from "@/components/right-bar";
+import RightBar from "@/components/right-bar";
 
 export default function RootLayout({
   children,
@@ -16,7 +16,7 @@ export default function RootLayout({
           </div>
           <div className="flex-1 lg:min-w-[600px] border-x-[1px] border-border-gray">{children}</div>
           <div className="flex-1 hidden lg:flex ml-4 md:ml-8">
-            <RigthBar/>
+            <RightBar/>
           </div>
         </div>
       </body>
