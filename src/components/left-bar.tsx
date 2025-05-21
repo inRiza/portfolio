@@ -14,7 +14,7 @@ const menuList = [
   {
     id: 2,
     name: 'LinkedIn',
-    link: '/',
+    link: 'https://www.linkedin.com/in/mrizainf/',
     icon: '/textures/linkedin.svg',  
   },
   {
@@ -26,13 +26,13 @@ const menuList = [
   {
     id: 4,
     name: 'Gmail',
-    link: '/',
+    link: 'mailto:13523164@std.stei.itb.ac.id',
     icon: '/textures/gmail.svg',
   },
   {
     id: 5,
     name: 'Instagram',
-    link: '/',
+    link: 'https://www.instagram.com/rizainfird/',
     icon: '/textures/instagram.svg',
   }
 ];
