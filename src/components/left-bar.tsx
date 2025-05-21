@@ -61,7 +61,7 @@ const LeftBar = () => {
                 width={24} 
                 height={24} 
               />
-              <span className={`hidden xxl:inline ${item.id === 1 ? 'font-bold' : ''}`}>{item.name}</span>
+              <span className={`hidden text-xl xxl:inline ${item.id === 1 ? 'font-bold' : ''}`}>{item.name}</span>
             </Link>
           ))}
         </div>
@@ -75,7 +75,7 @@ const LeftBar = () => {
         <Link 
           href="/" 
           onClick={handlePostClick}
-          className={`hidden xxl:block bg-white text-sm text-black rounded-full font-bold text-based py-2 px-6 text-center transition-all duration-300 hover:scale-105 hover:shadow-lg ${isAnimating ? 'animate-post-click' : ''}`}
+          className={`hidden xxl:block bg-white text-lg text-black rounded-full font-bold text-based py-2 px-6 text-center transition-all duration-300 hover:scale-105 hover:shadow-lg ${isAnimating ? 'animate-post-click' : ''}`}
         >
           Hello!
         </Link>

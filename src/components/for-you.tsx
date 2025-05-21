@@ -7,7 +7,7 @@ const ForYou = () => {
   const introduction = {
     username: "RizainF",
     handle: "rizainfird",
-    content: "Hello there, my name is Rizain i'm an undergraduate student at Bandung Institute of Technology, majoring in Informatics Engineering currently in my 2nd year. I love to learn new up to date tech and creating unique things. I have interest in Software Development, UI/UX, AI/ML, and Data Analysis. I also love to watch movies and reading news.",
+    content: "Hey there! 👋 My name is Rizain, and I'm a 2nd-year undergraduate student at the Bandung Institute of Technology, majoring in Informatics Engineering 💻. I'm passionate about exploring the latest tech trends and love creating unique, impactful projects 🚀. My interests span across Software Development, UI/UX Design, AI/ML, and Data Analysis 🧠📊. Outside of tech, you'll often find me catching up on movies 🎬 or staying informed by reading the news 🗞️. I'm always eager to learn and grow—let's build something awesome! 💡",
     timestamp: "19 May",
     avatarUrl: "/general/avatar.png",
     imageUrl: "",

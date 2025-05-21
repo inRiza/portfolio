@@ -10,12 +10,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto flex justify-between">
-          <div className="px-2 xsm:px-4 xxl:px-8">
+        <div className="mx-auto flex justify-between">
+          <div className="sticky min-w-[250px] pl-12 pr-8">
             <LeftBar/>
           </div>
-          <div className="flex-1 lg:min-w-[600px] border-x-[1px] border-border-gray">{children}</div>
-          <div className="flex-1 hidden lg:flex ml-4 md:ml-8">
+          <div className="flex-1 lg:min-w-[700px] border-x-[1px] border-border-gray h-screen overflow-y-auto scrollbar-hide">
+            {children}
+          </div>
+          <div className="flex-1 hidden lg:flex lg:min-w-[250px] pl-8 pr-8 h-screen overflow-hidden">
             <RightBar/>
           </div>
         </div>

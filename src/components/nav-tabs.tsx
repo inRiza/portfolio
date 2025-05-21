@@ -36,7 +36,7 @@ const NavTabs = ({activeTab, onTabChange}: NavTabsProps) => {
                     <button 
                         key={tab.key}
                         onClick={() => onTabChange(tab.key)}
-                        className={`relative flex-1 text-center px-8 py-4 hover:bg-hover-gray transition ${ activeTab === tab.key? 'font-bold' : 'text-text-gray font-semibold'}`}>
+                        className={`relative flex-1 text-center text-base px-8 py-4 hover:bg-hover-gray transition ${ activeTab === tab.key? 'font-bold' : 'text-text-gray font-semibold'}`}>
                             {tab.label}
                             {activeTab === tab.key && (
                                 <span className='absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-full border-b-4 border-icon-blue'></span>
